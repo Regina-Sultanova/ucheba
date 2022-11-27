@@ -1,0 +1,38 @@
+.hero {
+  margin: 100px auto;
+  .hero-banner {
+    display: flex;
+    margin: auto;
+    width: fit-content;
+
+    .hero-text {
+      width: 500px;
+      height: 500px;
+      margin-right: 25px;
+
+      display: flex;
+      align-items: center;
+      justify-content: right;
+      h1 {
+        font-size: 80px;
+        text-align: right;
+      }
+    }
+
+    img {
+      width: 500px;
+      height: 500px;
+    }
+  }
+
+  .hero-desc {
+    margin-top: 100px;
+    p {
+      font-size: 25px;
+      text-align: justify;
+    }
+    p + p {
+      margin-top: 20px;
+    }
+  }
+}

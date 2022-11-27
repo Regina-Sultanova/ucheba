@@ -1,1 +1,36 @@
-/*# sourceMappingURL=home.css.map */
+.hero {
+  margin: 100px auto;
+}
+.hero .hero-banner {
+  display: flex;
+  margin: auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.hero .hero-banner .hero-text {
+  width: 500px;
+  height: 500px;
+  margin-right: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+.hero .hero-banner .hero-text h1 {
+  font-size: 80px;
+  text-align: right;
+}
+.hero .hero-banner img {
+  width: 500px;
+  height: 500px;
+}
+.hero .hero-desc {
+  margin-top: 100px;
+}
+.hero .hero-desc p {
+  font-size: 25px;
+  text-align: justify;
+}
+.hero .hero-desc p + p {
+  margin-top: 20px;
+}/*# sourceMappingURL=home.css.map */
