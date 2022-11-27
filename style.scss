@@ -23,7 +23,7 @@ html {
 }
 
 .wrapper {
-  width: 1450px;
+  width: 1200px;
   margin: auto;
 }
 
@@ -32,7 +32,7 @@ html {
   background-color: var(--bg-color-header);
 
   .container {
-    width: 1450px;
+    width: 1200px;
     display: flex;
     margin: auto;
     height: 90px;
@@ -48,8 +48,9 @@ html {
       ul {
         list-style-type: none;
         display: flex;
-        width: 300px;
-        justify-content: space-between;
+        li + li {
+          margin-left: 25px;
+        }
 
         a {
           font-size: 20px;
@@ -72,7 +73,7 @@ footer {
 
   .footer-items {
     margin: auto;
-    width: 1450px;
+    width: 1200px;
 
     display: flex;
     align-items: center;
@@ -85,13 +86,16 @@ footer {
 
     ul {
       list-style-type: none;
-      width: 250px;
-      justify-content: space-between;
+
       display: flex;
 
       img {
         width: 60px;
         height: 60px;
+      }
+
+      li + li {
+        margin-left: 25px;
       }
     }
   }

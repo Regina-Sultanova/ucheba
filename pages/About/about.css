@@ -1,0 +1,59 @@
+.hero {
+  width: 100%;
+  margin: 100px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hero .hero-desc {
+  width: 620px;
+}
+.hero .hero-desc h2 {
+  font-weight: 600;
+  font-size: 50px;
+}
+.hero .hero-desc p {
+  margin-top: 30px;
+  font-size: 25px;
+}
+.hero img {
+  width: 500px;
+}
+
+.reasons-list {
+  margin: 100px auto;
+}
+.reasons-list .reason .reason-hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 250px;
+}
+.reasons-list .reason .reason-hero img {
+  height: 250px;
+  width: 250px;
+  margin-right: 30px;
+}
+.reasons-list .reason .reason-hero h2 {
+  font-size: 30px;
+}
+.reasons-list .reason .reason-desc {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+.reasons-list .reason .reason-desc p {
+  font-size: 25px;
+}
+.reasons-list .reason .reason-desc img {
+  margin-left: 30px;
+  width: 350px;
+  height: 350px;
+}
+.reasons-list .reason .reason-desc-extra {
+  margin-top: 25px;
+  font-size: 25px;
+}
+.reasons-list .reason + .reason {
+  margin-top: 100px;
+}/*# sourceMappingURL=about.css.map */
