@@ -1,0 +1,214 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f2cab5;
+  font-family: Garamond, "Times New Roman", Georgia, serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.shapka {
+  font-family: Garamond, "Times New Roman", Georgia, serif;
+  display: flex;
+  align-items: center;
+  height: 90px;
+  background-color: #ffffff;
+  padding: 0 140px;
+}
+
+.logotype {
+  width: 150px;
+  height: 48px;
+}
+
+.shapka ul {
+  list-style-type: none;
+  display: flex;
+  margin-right: 0;
+  margin-left: auto;
+}
+
+.shapka a {
+  color: black;
+  text-decoration: none;
+}
+
+.shapka li + li {
+  margin-left: 50px;
+}
+
+.hero {
+  display: flex;
+  width: fit-content;
+  align-items: center;
+  margin: 100px auto;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.prichini {
+  font-size: 45px;
+  text-align: left;
+  margin-right: 25px;
+}
+
+.pochemu {
+  font-size: 25px;
+  text-align: left;
+  margin-right: 25px;
+  margin-top: 40px;
+}
+
+.cotik {
+  width: 495px;
+}
+
+.reason1 {
+  display: flex;
+  width: fit-content;
+  align-items: center;
+  margin: 100px auto 50px;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.odin {
+  width: 291px;
+}
+
+.zagolovok1 {
+  font-size: 25px;
+  text-align: left;
+  margin-left: 25px;
+}
+
+.reason1text {
+  display: flex;
+  width: fit-content;
+  margin: 0px auto;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.text1 {
+  font-size: 25px;
+  text-align: justify;
+  margin-right: 25px;
+}
+
+.cotik1 {
+  width: 360px;
+  margin-bottom: 100px;
+}
+
+.text2 {
+  margin-bottom: 50px;
+  margin-left: 20%;
+  margin-right: 20%;
+  font-size: 25px;
+  text-align: justify;
+}
+
+.cotik3 {
+  width: 360px;
+  margin-bottom: 100px;
+}
+
+footer {
+  padding: 20px 0px;
+  background-color: #659888;
+}
+
+.footer-items {
+  width: 80%;
+  margin: auto;
+  display: flex;
+}
+
+.footertext {
+  font-size: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+footer ul {
+  display: flex;
+  align-items: center;
+  margin: 0 0 0 auto;
+  list-style-type: none;
+}
+
+footer img {
+  width: 60px;
+}
+
+footer li + li {
+  margin-left: 25px;
+}
+
+.scroll-top {
+  position: fixed;
+  bottom: 48px;
+  right: 48px;
+}
+
+.scroll-top button {
+  position: relative;
+  overflow: hidden;
+  height: 48px;
+  width: 48px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.3);
+  font-size: 16px;
+  background: #659888;
+  transition: width 0.5s;
+  border-radius: 100px;
+  box-shadow: 0 10px 20px #659888, 0 6px 6px #659888;
+}
+
+.scroll-top button span {
+  display: inline-block;
+  transition: opacity 0.3s ease 0s, transform 0.5s ease 0s;
+  line-height: 48px;
+  font-size: 20px;
+  width: 100%;
+}
+
+.scroll-top button span::before {
+  width: 100%;
+  position: absolute;
+  left: 0px;
+  top: 200%;
+  opacity: 0;
+  content: attr(data-hover);
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.scroll-top:hover button {
+  width: 120px;
+  background: #659888;
+}
+
+.scroll-top:hover button span {
+  -webkit-transform: translateY(-200%);
+  -moz-transform: translateY(-200%);
+  transform: translateY(-200%);
+}
+
+.scroll-top:hover button span:before {
+  opacity: 1;
+}
+
+.scroll-top button:active {
+  background: #659888;
+}
