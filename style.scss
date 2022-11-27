@@ -13,6 +13,13 @@
 
 body {
   background-color: var(--bg-color-main);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+html {
+  height: 100%;
 }
 
 .wrapper {
@@ -41,10 +48,11 @@ body {
       ul {
         list-style-type: none;
         display: flex;
-        width: 250px;
+        width: 300px;
         justify-content: space-between;
 
         a {
+          font-size: 20px;
           text-decoration: none;
           transition: 0.2s;
           &:hover {
@@ -60,6 +68,7 @@ footer {
   width: 100%;
   background-color: var(--bg-color-footer);
   padding: 20px 0;
+  margin: auto 0 0 0;
 
   .footer-items {
     margin: auto;

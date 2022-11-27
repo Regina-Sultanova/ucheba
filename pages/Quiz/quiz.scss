@@ -1,0 +1,34 @@
+.hero-quiz {
+  width: 1000px;
+  margin: 135px auto;
+
+  .quiz {
+    display: flex;
+    justify-content: space-between;
+
+    h2 {
+      font-size: 35px;
+    }
+
+    .answers {
+      width: 330px;
+      margin-left: 50px;
+      display: flex;
+      flex-direction: column;
+
+      label {
+        font-size: 35px;
+      }
+
+      input {
+        width: 15px;
+        height: 15px;
+        margin-right: 10px;
+      }
+    }
+  }
+
+  .quiz + .quiz {
+    margin-top: 100px;
+  }
+}

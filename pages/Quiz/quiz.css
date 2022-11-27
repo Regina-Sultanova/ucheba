@@ -1,0 +1,28 @@
+.hero-quiz {
+  width: 1000px;
+  margin: 135px auto;
+}
+.hero-quiz .quiz {
+  display: flex;
+  justify-content: space-between;
+}
+.hero-quiz .quiz h2 {
+  font-size: 35px;
+}
+.hero-quiz .quiz .answers {
+  width: 330px;
+  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+}
+.hero-quiz .quiz .answers label {
+  font-size: 35px;
+}
+.hero-quiz .quiz .answers input {
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+}
+.hero-quiz .quiz + .quiz {
+  margin-top: 100px;
+}/*# sourceMappingURL=quiz.css.map */
