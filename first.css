@@ -10,15 +10,6 @@ body {
   padding: 0;
 }
 
-.shapka {
-  font-family: Garamond, "Times New Roman", Georgia, serif;
-  display: flex;
-  align-items: center;
-  height: 90px;
-  background-color: #ffffff;
-  padding: 0 140px;
-}
-
 .logotype {
   width: 150px;
   height: 48px;
