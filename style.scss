@@ -9,6 +9,7 @@
   --bg-color-header: #ffffff;
   --bg-color-main: #f2cab5;
   --bg-color-footer: #659888;
+  --bg-button: #f2cab5;
 }
 
 body {
@@ -16,6 +17,8 @@ body {
   height: 100vh;
   display: flex;
   flex-direction: column;
+  height: 100%;
+  width: 100%;
 }
 
 html {
@@ -40,8 +43,13 @@ html {
     justify-content: space-between;
 
     .logo {
-      width: 150px;
-      height: 48px;
+      height: 90px;
+      display: flex;
+      align-items: center;
+      img {
+        width: 150px;
+        height: 48px;
+      }
     }
 
     nav {
@@ -52,21 +60,36 @@ html {
           margin-left: 25px;
         }
 
-        a {
-          font-size: 20px;
-          text-decoration: none;
-          transition: 0.2s;
-          &:hover {
-            color: var(--bg-color-main);
+        li {
+          a {
+            font-size: 20px;
+            text-decoration: none;
+            transition: 0.2s;
+            &:hover {
+              color: var(--bg-color-main);
+            }
           }
         }
       }
     }
   }
+
+  .nav-button {
+    display: none;
+    position: absolute;
+
+    width: 45px;
+    height: 45px;
+    z-index: 999;
+
+    top: 25px;
+    left: 25px;
+
+    cursor: pointer;
+  }
 }
 
 footer {
-  width: 100%;
   background-color: var(--bg-color-footer);
   padding: 20px 0;
   margin: auto 0 0 0;
@@ -96,6 +119,71 @@ footer {
 
       li + li {
         margin-left: 25px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1240px) {
+  .header-main {
+    padding: 0 45px;
+    width: auto;
+
+    .container {
+      width: 80%;
+    }
+  }
+  .wrapper {
+    width: 90%;
+  }
+
+  footer {
+    padding: 20px 45px;
+
+    .footer-items {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .header-main {
+    padding: 0;
+
+    .container {
+      .logo {
+        margin: auto;
+        z-index: 999;
+      }
+
+      nav {
+        display: none;
+      }
+    }
+
+    .nav-button {
+      display: initial;
+    }
+  }
+
+  footer {
+    padding: 15px 90px;
+
+    .footer-items {
+      display: block;
+      width: 100%;
+      text-align: center;
+      ul {
+        margin-top: 15px;
+        justify-content: space-between;
+        img {
+          width: 15vw;
+          height: 15vw;
+        }
+
+        li + li {
+          margin: 0;
+        }
       }
     }
   }

@@ -3,6 +3,7 @@
 }
 .hero .hero-banner {
   display: flex;
+  align-items: center;
   margin: auto;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -33,4 +34,52 @@
 }
 .hero .hero-desc p + p {
   margin-top: 20px;
+}
+
+@media screen and (max-width: 1240px) {
+  .hero {
+    margin: 50px auto;
+  }
+  .hero .hero-banner {
+    justify-content: space-between;
+    width: 800px;
+  }
+  .hero .hero-banner .hero-text {
+    width: 45%;
+    height: 45%;
+    margin: 0;
+  }
+  .hero .hero-banner .hero-text h1 {
+    font-size: 65px;
+  }
+  .hero .hero-banner img {
+    width: 400px;
+    height: 400px;
+  }
+  .hero .hero-desc {
+    margin-top: 50px;
+  }
+}
+@media screen and (max-width: 850px) {
+  .hero {
+    margin: 25px auto;
+  }
+  .hero .hero-banner {
+    display: block;
+    justify-content: initial;
+    text-align: center;
+    width: 100%;
+  }
+  .hero .hero-banner .hero-text {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: auto;
+  }
+  .hero .hero-banner .hero-text h1 {
+    font-size: 45px;
+  }
+  .hero .hero-banner img {
+    margin-top: 25px;
+  }
 }/*# sourceMappingURL=home.css.map */
