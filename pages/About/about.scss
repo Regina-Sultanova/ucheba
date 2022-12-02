@@ -31,7 +31,6 @@
     .reason-hero {
       display: flex;
       align-items: center;
-      justify-content: space-between;
       height: 250px;
 
       img {
@@ -41,7 +40,7 @@
       }
 
       h2 {
-        font-size: 30px;
+        font-size: 35px;
       }
     }
 
@@ -69,5 +68,81 @@
 
   .reason + .reason {
     margin-top: 100px;
+  }
+}
+
+@media screen and (max-width: 1040px) {
+  .hero {
+    margin: 50px auto;
+    flex-direction: column;
+
+    img {
+      width: 400px;
+      height: 400px;
+    }
+
+    .hero-desc {
+      width: 600px;
+      text-align: center;
+      p {
+        margin: 25px auto;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .hero {
+    margin: 25px auto;
+
+    img {
+      width: 350px;
+      height: 350px;
+    }
+
+    .hero-desc {
+      width: auto;
+
+      h2 {
+        font-size: 35px;
+      }
+
+      p {
+        font-size: 25px;
+      }
+    }
+  }
+  .reasons-list {
+    margin: 50px auto;
+    .reason {
+      .reason-hero {
+        height: auto;
+
+        img {
+          width: 180px;
+          height: 180px;
+        }
+
+        h2 {
+          font-size: 25px;
+        }
+      }
+
+      .reason-desc {
+        flex-direction: column;
+        margin: 25px auto;
+        p {
+          text-align: justify;
+        }
+        img {
+          margin: 25px auto 0;
+          width: 300px;
+          height: 300px;
+        }
+      }
+    }
+    .reason + .reason {
+      margin-top: 50px;
+    }
   }
 }

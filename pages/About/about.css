@@ -26,7 +26,6 @@
 .reasons-list .reason .reason-hero {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   height: 250px;
 }
 .reasons-list .reason .reason-hero img {
@@ -35,7 +34,7 @@
   margin-right: 30px;
 }
 .reasons-list .reason .reason-hero h2 {
-  font-size: 30px;
+  font-size: 35px;
 }
 .reasons-list .reason .reason-desc {
   display: flex;
@@ -56,4 +55,68 @@
 }
 .reasons-list .reason + .reason {
   margin-top: 100px;
+}
+
+@media screen and (max-width: 1040px) {
+  .hero {
+    margin: 50px auto;
+    flex-direction: column;
+  }
+  .hero img {
+    width: 400px;
+    height: 400px;
+  }
+  .hero .hero-desc {
+    width: 600px;
+    text-align: center;
+  }
+  .hero .hero-desc p {
+    margin: 25px auto;
+  }
+}
+@media screen and (max-width: 680px) {
+  .hero {
+    margin: 25px auto;
+  }
+  .hero img {
+    width: 350px;
+    height: 350px;
+  }
+  .hero .hero-desc {
+    width: auto;
+  }
+  .hero .hero-desc h2 {
+    font-size: 35px;
+  }
+  .hero .hero-desc p {
+    font-size: 25px;
+  }
+  .reasons-list {
+    margin: 50px auto;
+  }
+  .reasons-list .reason .reason-hero {
+    height: auto;
+  }
+  .reasons-list .reason .reason-hero img {
+    width: 180px;
+    height: 180px;
+  }
+  .reasons-list .reason .reason-hero h2 {
+    font-size: 25px;
+  }
+  .reasons-list .reason .reason-desc {
+    flex-direction: column;
+    margin: 25px auto;
+  }
+  .reasons-list .reason .reason-desc p {
+    text-align: justify;
+  }
+  .reasons-list .reason .reason-desc img {
+    margin: 25px auto 0;
+    width: 300px;
+    height: 300px;
+  }
+  .reasons-list .reason + .reason {
+    margin-top: 50px;
+  }
 }/*# sourceMappingURL=about.css.map */

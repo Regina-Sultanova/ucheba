@@ -2,6 +2,7 @@
   margin: 100px auto;
   .hero-banner {
     display: flex;
+    align-items: center;
     margin: auto;
     width: fit-content;
 
@@ -33,6 +34,56 @@
     }
     p + p {
       margin-top: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 1240px) {
+  .hero {
+    margin: 50px auto;
+    .hero-banner {
+      justify-content: space-between;
+      width: 800px;
+      .hero-text {
+        width: 45%;
+        height: 45%;
+        margin: 0;
+        h1 {
+          font-size: 65px;
+        }
+      }
+
+      img {
+        width: 400px;
+        height: 400px;
+      }
+    }
+
+    .hero-desc {
+      margin-top: 50px;
+    }
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .hero {
+    margin: 25px auto;
+
+    .hero-banner {
+      display: block;
+      justify-content: initial;
+      text-align: center;
+      width: 100%;
+      .hero-text {
+        width: fit-content;
+        margin: auto;
+        h1 {
+          font-size: 45px;
+        }
+      }
+      img {
+        margin-top: 25px;
+      }
     }
   }
 }
