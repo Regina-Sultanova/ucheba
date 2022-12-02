@@ -7,6 +7,7 @@
     <title>Опрос</title>
     <link rel="stylesheet" href="../../style.css" />
     <link rel="stylesheet" href="./quiz.css" />
+    <script src="./quiz.js" defer></script>
   </head>
   <body>
     <header class="header-main">
@@ -28,9 +29,11 @@
       <div class="quiz">
         <h2>Вам нравятся картинки с котятами?</h2>
         <div class="answers">
-          <label><input type="radio" />Да</label>
-          <label><input type="radio" />Конечно да</label>
-          <label><input type="radio" />Абсолютно точно да</label>
+          <label><input id="radio_like_1" type="radio" />Да</label>
+          <label><input id="radio_like_2" type="radio" />Конечно да</label>
+          <label
+            ><input id="radio_like_3" type="radio" />Абсолютно точно да</label
+          >
         </div>
       </div>
       <div class="quiz">
@@ -39,10 +42,10 @@
           нравятся больше всего?
         </h2>
         <div class="answers">
-          <label><input type="checkbox" />Милые</label>
-          <label><input type="checkbox" />Смешные</label>
-          <label><input type="checkbox" />Грустные</label>
-          <label><input type="checkbox" />Злые</label>
+          <label><input id="checkbox_like_1" type="checkbox" />Милые</label>
+          <label><input id="checkbox_like_2" type="checkbox" />Смешные</label>
+          <label><input id="checkbox_like_3" type="checkbox" />Грустные</label>
+          <label><input id="checkbox_like_4" type="checkbox" />Злые</label>
         </div>
       </div>
     </div>
